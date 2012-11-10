@@ -3,3 +3,7 @@ $('#top-arrow').click(function (e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 500);
 });
+
+$('#main-nav a').click(function () {
+    _gaq.push(['Nav', $(this).attr('href')]);
+});

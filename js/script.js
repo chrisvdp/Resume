@@ -7,7 +7,7 @@ $('#top-arrow').click(function (e) {
 var googleAnalyics = function () {
     var timeTracking,
         theTime = 0,
-        interval = 10000;
+        interval = 20000;
     function trackTime() {
         _gaq.push(['_trackPageview','_timing', 'the time', theTime]);
         theTime += interval;
